@@ -3,6 +3,7 @@ const user = "google";
 const url = `https://api.github.com/users/${user}/repos`;
 
 async function getRepos() {
+  console.log("***** Consumo de APIs *****");
   try {
     const response = await axios.get(url);
     const repos = response.data;
